@@ -1,0 +1,72 @@
+// .zone-wrapper {
+//   max-width: 700px;
+// }
+.main-posts-list {
+	width: 800px;
+}
+
+.sidebar {
+	margin-top: 76px;
+	float: right;
+	width: 200px;
+	height: auto;
+	background-color:  white;
+	margin-left: 20px;
+}
+
+.flex-container {
+	display: -webkit-flex;
+ display: flex;
+ width: 1000px;
+}
+// <div class="zone-wrapper post author- no-thumbnail" data-zone="postComponents">
+
+.post {
+	margin: 10px;
+	background-color: white;
+	height: 150px;
+	transition-duration: .5s;
+}
+
+.post .post-title {
+font-size: 35px;
+}
+
+.post img {
+	height: 80px;
+	width: 80px;
+	border-radius: 225px;
+
+}
+
+.post:hover {
+	margin: 10px;
+	background-color: white;
+	box-shadow: 10px 10px 5px #888888;
+	height: 150px;
+	transition-duration: .5s;
+}
+
+.menu-label-text {
+	font-size: 30px;
+}
+
+.header {
+	background-image: url("http://www.pawderosa.com/images/puppies.jpg");
+}
+header {
+	height: 200px;
+}
+
+.socialSharing img{
+	height: 50px;
+	width: 50px;
+}
+
+.views-menu-wrapper {
+	background-color: #eee;
+}
+
+.post-rank-inner span{
+	color: black !important;
+}
