@@ -12,6 +12,8 @@
 	height: auto;
 	background-color:  white;
 	margin-left: 20px;
+	    border-radius: 4px;
+			box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.15 );
 }
 
 .flex-container {
@@ -26,6 +28,8 @@
 	background-color: white;
 	height: 150px;
 	transition-duration: .5s;
+	    border-radius: 4px;
+			box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.15 );
 }
 
 .post .post-title {
@@ -45,6 +49,7 @@ font-size: 35px;
 	box-shadow: 10px 10px 5px #888888;
 	height: 150px;
 	transition-duration: .5s;
+	    border-radius: 4px;
 }
 
 .menu-label-text {
@@ -52,11 +57,12 @@ font-size: 35px;
 }
 
 .header {
-	background-image: url("http://www.pawderosa.com/images/puppies.jpg");
+		box-shadow: 0 1px 3px rgba( 0, 0, 0, 0.15 );
+		background-color: #eee !important;
+		color: black !important;
+	// background-image: url("http://www.pawderosa.com/images/puppies.jpg");
 }
-header {
-	height: 200px;
-}
+
 
 .socialSharing img{
 	height: 50px;
@@ -68,5 +74,32 @@ header {
 }
 
 .post-rank-inner span{
+	display: none !important;
+}
+
+.logo-text a{
+	font-family: 'SugarPie',"Open Sans",Tahoma,sans-serif !important;
+	color: #A9F5D0 !important;
+	font-size: 50px;
+	transition-duration: .5s;
+
+}
+
+.logo-text a:hover {
 	color: black !important;
+	// box-shadow: 10px 10px 5px #D358F7;
+	transition-duration: .5s;
+}
+
+.search-field {
+	color: black !important;
+}
+
+#submit {
+	background-color:  #A9F5D0;
+}
+
+.newsletter-button{
+	background-color:  #A9F5D0 !important;
+
 }
