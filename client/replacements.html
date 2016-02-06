@@ -1,39 +1,51 @@
-
 <template name="custom_main_posts_list">
-
-<div class = "flex-container">
-        <div class="main-posts-list">
-          {{> modules zone="postsListTop"}}
-          {{#if customTemplate}}
-            {{> Template.dynamic template=customTemplate data=arguments}}
-          {{else}}
-            {{> posts_list_controller arguments}}
-          {{/if}}
-          {{> modules zone="postsListBottom"}}
-        </div>
-        <div class = "sidebar">
-
-          <form>
-            <h4 class="newsletter-tagline">{{_ "receive_the_best_of"}} {{siteName}} {{_ "right_in_your_inbox"}}</h4>
-              <input class="newsletter-email" type="email" placeholder="Your Email">
-            <button class="button newsletter-button btn btn-primary">{{_ "get_newsletter"}}<span class="button-loader"><img src="/packages/telescope_core/public/img/loading.svg"/></span></button>
-          </form>
-
-          <div class = "socialSharing">
-            <a href = "https://twitter.com/PetVote"><img src = "https://lh3.ggpht.com/lSLM0xhCA1RZOwaQcjhlwmsvaIQYaP3c5qbDKCgLALhydrgExnaSKZdGa8S3YtRuVA=w300"></a>
+  <div class = "flex-container">
+          <div class="main-posts-list">
+            {{> modules zone="postsListTop"}}
+            {{#if customTemplate}}
+              {{> Template.dynamic template=customTemplate data=arguments}}
+            {{else}}
+              {{> posts_list_controller arguments}}
+            {{/if}}
+            {{> modules zone="postsListBottom"}}
           </div>
+          <div class = "sidebar">
+            <form>
+              <h4 class="newsletter-tagline">{{_ "receive_the_best_of"}} {{siteName}} {{_ "right_in_your_inbox"}}</h4>
+                <input class="newsletter-email" type="email" placeholder="Your Email">
+              <button class="button newsletter-button btn btn-primary">{{_ "get_newsletter"}}<span class="button-loader"><img src="/packages/telescope_core/public/img/loading.svg"/></span></button>
+            </form>
 
-        </div>
-
-
-</div>
-
-
+            <div class = "socialSharing">
+              <a href = "https://twitter.com/PetVote"><img src = "https://lh3.ggpht.com/lSLM0xhCA1RZOwaQcjhlwmsvaIQYaP3c5qbDKCgLALhydrgExnaSKZdGa8S3YtRuVA=w300"></a>
+            </div>
+          </div>
+  </div>
 </template>
-
 
 <template name="custom_footer_code">
   <div class="footer-code {{moduleClass}}">
-
   </div>
+</template>
+
+
+<template name="custom_header">
+  <header class="header {{headerClass}}">
+
+    <a href="#menu" class="mobile-only mobile-menu-button button">
+      {{{icon "menu"}}}
+    </a>
+
+    {{> logo}}
+
+    {{#if hasPrimaryNav}}
+      {{> modules zone="primaryNav" zoneClass="nav primary-nav desktop-nav header-module desktop-only" moduleClass="header-submodule"}}
+    {{/if}}
+
+    {{#if hasSecondaryNav}}
+      {{> modules zone="secondaryNav" zoneClass="nav secondary-nav desktop-nav header-module desktop-only" moduleClass="header-submodule"}}
+    {{/if}}
+
+
+  </header>
 </template>
