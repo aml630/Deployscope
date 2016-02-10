@@ -6,7 +6,7 @@
 }
 
 .sidebar {
-	margin-top: 76px;
+	margin-top: 55px;
 	float: right;
 	width: 200px;
 	height: auto;
@@ -68,7 +68,7 @@ font-size: 35px;
 }
 
 .menu-label-text {
-	font-size: 30px;
+	font-size: 15px;
 }
 
 .header {
@@ -80,8 +80,8 @@ font-size: 35px;
 
 
 .socialSharing img{
-	height: 50px;
-	width: 50px;
+	height: 100px;
+	width: 100px;
 }
 
 .views-menu-wrapper {
@@ -93,11 +93,10 @@ font-size: 35px;
 }
 
 .logo-text a{
-	font-family: 'SugarPie',"Open Sans",Tahoma,sans-serif !important;
+	font-family: "Comic Sans MS", cursive, sans-serif !important;
 	color: #A9F5D0 !important;
 	font-size: 50px;
 	transition-duration: .5s;
-
 }
 
 .logo-text a:hover {
@@ -121,4 +120,22 @@ font-size: 35px;
 
 .icon-menu {
 	background-color:  #A9F5D0 !important;
+}
+
+.about {
+	margin: 10px;
+	border-bottom: 1px dotted black;
+	font-style: italic;
+}
+
+.about h1 {
+	font-size: 25px;
+	font-style: italic;
+	border-bottom: 1px dotted black;
+	border-top: 1px dotted black;
+	color: #A9F5D0;
+}
+
+.about p {
+	font-size: 18px;
 }
